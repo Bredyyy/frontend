@@ -1,0 +1,142 @@
+/* Estilo para o fundo preto */
+body, .login-container, .user-management {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilizando a página de login */
+.login-form, .user-management {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Aumenta ainda mais o tamanho da página */
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Estilizando a página de usuários */
+.user-management {
+  max-width: 1200px; /* Aumenta o tamanho da página de usuários */
+  min-height: 700px; /* Garante que a página tenha uma altura maior */
+  padding: 30px;
+  overflow-y: auto;
+  width: 90%; /* Torna a página mais larga */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #222;
+  color: #fff;
+}
+
+button.primary {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  background-color: #0056b3;
+}
+
+button.secondary {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.secondary:hover {
+  background-color: #c0392b;
+}
+
+/* Estilo para o título e a tabela */
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center; /* Centralizando o texto nas colunas */
+}
+
+th {
+  background-color: #333;
+}
+
+td {
+  background-color: #444;
+}
+
+tr:hover td {
+  background-color: #555;
+}
+
+/* Ajustando as colunas da tabela */
+th, td {
+  width: 33%; /* Definindo um tamanho uniforme para todas as colunas */
+}
+
+input, button {
+  font-size: 16px;
+}
+
+.logged-in .login-form {
+  display: none;
+}
+
+.logged-in .user-management {
+  display: block;
+}
+
+/* Ajustando o botão 'Entrar' */
+button.primary {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Tamanho maior para o botão 'Entrar' na página de usuários */
+button.primary {
+  padding: 15px 0;
+  font-size: 18px;
+}
